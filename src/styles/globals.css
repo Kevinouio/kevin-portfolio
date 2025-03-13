@@ -1,0 +1,76 @@
+/* Import Tailwind's base styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+    --background: #0F172A;   /* Deep Navy */
+    --text-dark: #E2E8F0;    /* Light Gray */
+    --secondary: #64748B;    /* Slate Gray */
+    --primary: #1E293B;      /* Dark Blue-Gray */
+    --accent: #06B6D4;       /* Cyan */
+}
+
+/* Global Styles */
+body {
+    background-color: var(--background);
+    color: var(--text-dark);
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.25rem;  /* text-4xl */
+    font-weight: 700;    /* font-bold */
+    color: var(--text-dark);
+}
+
+@media (min-width: 768px) { /* md:text-5xl */
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+h2 {
+    font-size: 1.5rem;   /* text-2xl */
+    font-weight: 600;    /* font-semibold */
+    color: var(--text-dark);
+}
+
+@media (min-width: 768px) { /* md:text-3xl */
+    h2 {
+        font-size: 1.875rem;
+    }
+}
+
+/* Paragraphs */
+p {
+    font-size: 1.125rem; /* text-lg */
+    color: var(--secondary);
+}
+
+@media (min-width: 768px) { /* md:text-xl */
+    p {
+        font-size: 1.25rem;
+    }
+}
+
+/* Buttons */
+
+/* Sections */
+.container {
+    max-width: 64rem; /* max-w-5xl */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem; /* px-6 */
+    padding-right: 1.5rem;
+}
+
+.section {
+    padding-top: 4rem; /* py-16 */
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
