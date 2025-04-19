@@ -1,23 +1,20 @@
-import { useState, useEffect } from "react";
-
-
+// Skills.tsx
 export default function Skills() {
+    const skills = [
+        "JavaScript", "TypeScript", "React", "Node.js",
+        "Python", "TensorFlow", "Tailwind CSS", "Git",
+    ];
+
     return (
-        <div className="Skills">
-            <div>
-                <h1>
-                    Hey Y'all! I'm Kevin Ho
-                </h1>
-                <p>
-                    Currently, I'm in my second year of my undergrad at Mississippi State University. I
-                    am double majoring in Computer Science and Mathematics with plans to go onto PhD
-                    school once I'm done with my undergraduate studies.
-                </p>
-
-
-
-            </div>
-
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            {skills.map((skill) => (
+                <span
+                    key={skill}
+                    className="px-4 py-2 bg-secondary text-text-dark rounded-lg shadow"
+                >
+          {skill}
+        </span>
+            ))}
         </div>
     );
 }

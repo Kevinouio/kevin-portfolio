@@ -1,0 +1,63 @@
+.heroSection {
+    background-color: var(--background);
+    min-height: 100vh;
+    padding: 1rem 1.5rem;
+    margin: 0 auto;           /* center */
+    max-width: 1280px;        /* constrain */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .heroSection {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+/* Text column: 60% width */
+.heroText {
+    flex: 0 0 50%;
+}
+
+.heroDescription {
+    font-size: 1rem;         /* Try smaller like 0.95rem or larger like 1.25rem */
+    line-height: 1.6;
+    color: var(--secondary);
+    margin-top: 1rem;
+    max-width: 36rem;
+}
+
+/* Photo column: 40% width, pushed to the right */
+.photoContainer {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: flex-end;  /* push image to the right edge */
+}
+.photoWrapper {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+@media (min-width: 768px) {
+    .photoWrapper {
+        width: 20rem;
+        height: 20rem;
+    }
+}
+.photoImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.highlight {
+    color: #26809f; /* example: gold */
+}
+
+

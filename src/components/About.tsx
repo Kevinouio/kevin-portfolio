@@ -1,12 +1,12 @@
 export default function About() {
     return (
         <section className="bg-secondary py-16 text-center">
-            <h2
+            <h1
                 data-aos="fade-up"
                 data-aos-duration="1500"  // Animation duration in milliseconds
                 className="text-3xl font-semibold text-primary">
                 About Me
-            </h2>
+            </h1>
 
             <p
                 data-aos="fade-up"

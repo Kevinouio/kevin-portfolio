@@ -1,0 +1,58 @@
+/* src/styles/components/Navbar.module.css */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--primary);
+    z-index: 100;
+}
+
+/* NEW container to center & constrain */
+.navContent {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem; /* reduce horizontal padding if needed */
+}
+
+/* Social icons on the left */
+.socialList {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.socialList a {
+    color: var(--text-dark);
+    font-size: 1.25rem;
+    transition: color 0.2s;
+}
+
+.socialList a:hover {
+    color: var(--accent);
+}
+
+/* Nav links on the right */
+.linkList {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.linkList a {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.linkList a:hover {
+    color: var(--accent);
+}

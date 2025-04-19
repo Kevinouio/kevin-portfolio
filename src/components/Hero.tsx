@@ -1,35 +1,36 @@
+// src/components/Hero.tsx
+import React from "react";
+import styles from "../styles/components/Hero.module.css";
+
 export default function Hero() {
     return (
-        <section className="bg-background min-h-screen flex flex-col justify-center items-center text-center px-6">
-            <div>
-                <h1
-                    data-aos="fade-up"
-                    data-aos-duration="1500"
-                    className="text-5xl font-bold text-primary">
-                    Hey, I'm Kevin Ho
+        <section
+            id="home"
+            className={styles.heroSection}
+            data-aos="fade-up"
+        >
+            {/* text */}
+            <div className={styles.heroText}>
+                <h1 className={styles.heroTitle}>
+                    Hey, I’m <span className={styles.highlight}>Kevin Ho</span>
                 </h1>
 
-                <p
-                    data-aos="fade-up"
-                    data-aos-delay="300"
-                    data-aos-duration="1200"
-                    className="mt-4 text-xl text-secondary max-w-2xl">
-                    I'm a Computer Science & Mathematics student at Mississippi State University, passionate about AI, ML, and full-stack development.
+                <p className={styles.heroDescription}>
+                    I’m a third-year student at Mississippi State University, double majoring in Computer Science and Mathematics. I’m passionate about exploring the intersection of theory and application — whether it’s building software, diving into algorithms, or experimenting with machine learning.
+
+                    With a background in Python, C++, React, and TypeScript, I enjoy crafting thoughtful systems and learning how things work under the hood. I'm always curious, always building, and always trying to get better — one line of code at a time.
                 </p>
             </div>
-            <div>
-                <nav className="bg-black py-4">
-                    <ul className="flex justify-center space-x-6 text-white text-xl font-bold uppercase">
-                        <h2>Projects</h2>
-                        <span className="text-primary-400">/</span>
-                        <h2>Education</h2>
-                        <span className="text-gray-400">/</span>
-                        <h2>Skills</h2>
-                        <span className="text-gray-400">/</span>
-                        <h2>Resume</h2>
-                    </ul>
-                </nav>
 
+            {/* photo */}
+            <div className={styles.photoContainer}>
+                <div className={styles.photoWrapper}>
+                    <img
+                        src="/photo.jpg"           /* after moving into public/ */
+                        alt="Kevin Ho"
+                        className={styles.photoImg}
+                    />
+                </div>
             </div>
         </section>
     );
