@@ -1,7 +1,7 @@
 .heroSection {
     background-color: var(--background);
     min-height: 100vh;
-    padding: 1rem 1.5rem;
+    padding: 0rem 13rem;
     margin: 0 auto;           /* center */
     max-width: 1280px;        /* constrain */
     display: flex;
@@ -20,11 +20,11 @@
 
 /* Text column: 60% width */
 .heroText {
-    flex: 0 0 50%;
+    flex: 0 0 60%;
 }
 
 .heroDescription {
-    font-size: 1rem;         /* Try smaller like 0.95rem or larger like 1.25rem */
+    font-size: 0.90rem;         /* Try smaller like 0.95rem or larger like 1.25rem */
     line-height: 1.6;
     color: var(--secondary);
     margin-top: 1rem;

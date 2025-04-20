@@ -11,7 +11,7 @@ export default function Hero() {
             {/* text */}
             <div className={styles.heroText}>
                 <h1 className={styles.heroTitle}>
-                    Hey Guys, I’m <span className={styles.highlight}>Kevin Ho</span>
+                    Hey! I’m <span className={styles.highlight}>Kevin Ho</span>
                 </h1>
 
                 <p className={styles.heroDescription}>

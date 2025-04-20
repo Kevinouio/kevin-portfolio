@@ -21,6 +21,9 @@ export default function Projects() {
     return (
         <section id="projects" className={styles.projectsSection} data-aos="fade-up">
             <h2 className={styles.heading}>My Projects</h2>
+            <p className={styles.projectDescription}>
+                Below you'll find a selection of my best work that reflects my skills and experience in Software Engineering. Each project was completed with great attention to detail and using modern technologies.
+            </p>
             <div className={styles.projectGrid}>
                 {visibleProjects.map((proj: Project) => (
                     <div key={proj.id} className={styles.projectCard}>

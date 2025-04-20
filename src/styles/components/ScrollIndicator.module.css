@@ -73,3 +73,47 @@
     opacity: 1;
     transform: translateY(-50%) translateX(0);
 }
+
+
+.dots {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    /* evenly spread from top→bottom */
+    align-items: center;
+    pointer-events: all;
+}
+
+.dot {
+    box-sizing: border-box;            /* include border in size */
+    width: 16px;                       /* make them a bit bigger */
+    height: 16px;
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+    background-color: var(--primary);
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.dotWrapper:hover .dot {
+    transform: scale(1.3);
+}
+
+/* Highlight‑dot that moves */
+.highlightDot {
+    position: absolute;
+    left: 50%;                   /* center on the line */
+    transform: translate(-50%, -50%);
+    width: 16px;                 /* match your static dot width */
+    height: 16px;
+    border: 2px solid var(--accent);  /* same border as static dots */
+    background-color: var(--accent);
+    border-radius: 50%;
+    box-sizing: border-box;      /* include border in the size */
+    transition: top 0.3s ease-out;
+    pointer-events: none;
+    z-index: 999;
+}

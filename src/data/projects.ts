@@ -16,7 +16,7 @@ export const allProjects: Project[] = [
         title: "Portfolio Website",
         description: "My personal site built from scratch with React, TypeScript, and CSS Modules.",
         technologies: ["React", "TypeScript", "CSS Modules"],
-        githubLink: "https://github.com/Kevinouio/portfolio-website",
+        githubLink: "https://github.com/Kevinouio/kevin-portfolio",
         demoLink: "https://kevinouio.com",
     },
     {
@@ -25,7 +25,7 @@ export const allProjects: Project[] = [
         description:
             "A simulator that couples power grids, transportation networks, and water distribution systems for cross‑domain analysis.",
         technologies: ["Python", "PyPSA", "SUMO"],
-        githubLink: "https://github.com/Kevinouio/network-dynamics",
+        githubLink: "https://github.com/Kevinouio/SocialxTransportation",
         demoLink: "",
     },
     {
@@ -43,7 +43,7 @@ export const allProjects: Project[] = [
         description:
             "CLI pairing tool for chess tournaments in C++, later reimplemented in Python with a web UI.",
         technologies: ["C++", "Python", "Flask"],
-        githubLink: "https://github.com/Kevinouio/chess-tournament",
+        githubLink: "https://github.com/Kevinouio/Swiss-Matchmaking-2023-",
         demoLink: "",
     },
     {
@@ -52,7 +52,7 @@ export const allProjects: Project[] = [
         description:
             "A simple Blackjack recreation using Python’s turtle graphics (first project, 2022).",
         technologies: ["Python", "turtle"],
-        githubLink: "https://github.com/Kevinouio/blackjack-turtle",
+        githubLink: "https://github.com/Kevinouio/BlackJack-2021-",
         demoLink: "",
     },
     {
@@ -61,7 +61,7 @@ export const allProjects: Project[] = [
         description:
             "Real‑time hand landmark detection using OpenCV, PyTorch, and MediaPipe (summer 2024 side project).",
         technologies: ["OpenCV", "PyTorch", "MediaPipe"],
-        githubLink: "https://github.com/Kevinouio/hand-tracking",
+        githubLink: "https://github.com/Kevinouio/Hand-Tracking",
         demoLink: "",
     },
     {
@@ -70,7 +70,7 @@ export const allProjects: Project[] = [
         description:
             "AlphaZero‑based Connect 4 AI with a React front‑end and PyTorch back‑end.",
         technologies: ["React", "JavaScript", "PyTorch"],
-        githubLink: "https://github.com/Kevinouio/connect4-alphazero",
+        githubLink: "https://github.com/Kevinouio/Presentation",
         demoLink: "",
     },
     {

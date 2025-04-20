@@ -21,13 +21,6 @@ export const funFacts: FunFact[] = [
         image: "/icpc.jpg",
     },
     {
-        id: 3,
-        title: "Math Club Competitor",
-        description:
-            "I'm an active participant in the MSU Math Club, where I’ve competed in both the Putnam Exam and regional MAA math competitions. Our team won 1st place in the MAA team section, and I enjoy collaborating with fellow math enthusiasts on proof-based and theoretical problem sets outside of class.",
-        image: "/math-club.jpg",
-    },
-    {
         id: 4,
         title: "Valorant Esports Team Member",
         description:
