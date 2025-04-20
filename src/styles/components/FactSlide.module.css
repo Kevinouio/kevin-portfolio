@@ -1,0 +1,51 @@
+.factSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 1.5rem;
+    gap: 2rem;
+    background-color: var(--background);
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .factSection {
+        flex-direction: row;
+        text-align: left;
+    }
+    .factSection.reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+.textBlock {
+    flex: 1;
+}
+
+.title {
+    font-size: 2rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.description {
+    color: var(--secondary);
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+.imageBlock {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    width: 100%;
+    max-width: 24rem;
+    border-radius: 8px;           /* optional: slight corner rounding */
+    border: none;                 /* remove outline */
+    object-fit: cover;
+}
+

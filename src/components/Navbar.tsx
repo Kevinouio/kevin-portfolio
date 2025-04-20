@@ -13,8 +13,8 @@ export default function Navbar() {
         { label: "Home",     href: "#home"     },
         { label: "Projects", href: "#projects" },
         { label: "Skills",   href: "#skills"   },
-        { label: "About",    href: "#about"    },
         { label: "Resume",   href: "#resume"   },
+        { label: "Fun Facts",    href: "#fun-facts"    },
         { label: "Contact",  href: "#contact"  },
     ];
 

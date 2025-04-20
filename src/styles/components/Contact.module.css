@@ -1,0 +1,128 @@
+/* Call‑to‑action section with the Contact Me button */
+.callSection {
+    text-align: center;
+    padding: 4rem 1.5rem;
+}
+
+.openButton {
+    background-color: var(--accent);
+    color: var(--background);
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.openButton:hover {
+    opacity: 0.85;
+}
+
+/* Modal overlay */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+}
+
+/* Modal box */
+.modal {
+    background: var(--primary);
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    color: var(--text-dark);
+}
+
+.closeButton {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--secondary);
+    cursor: pointer;
+}
+
+.modalTitle {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Form styles */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.875rem;
+    color: var(--accent);
+}
+
+.form input,
+.form textarea {
+    margin-top: 0.25rem;
+    padding: 0.75rem;
+    border: 1px solid var(--secondary);
+    border-radius: 4px;
+    background: var(--background);
+    color: var(--text-dark);
+    font-size: 1rem;
+}
+
+.form input:focus,
+.form textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.recaptchaPlaceholder {
+    background: #fff;
+    color: #000;
+    height: 78px; /* approximate recaptcha height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+}
+
+/* Submit button */
+.submitButton {
+    margin-top: 1rem;
+    background-color: var(--accent);
+    color: var(--background);
+    border: none;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.submitButton:hover {
+    opacity: 0.85;
+}
+
+/* Thank‑you message */
+.thankYou {
+    text-align: center;
+    font-size: 1.125rem;
+    color: var(--accent);
+}

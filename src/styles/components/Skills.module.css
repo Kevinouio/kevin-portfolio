@@ -1,0 +1,79 @@
+/* src/styles/components/Skills.module.css */
+
+.skillsSection {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+    text-align: center;
+}
+
+.heading {
+    font-size: 2.5rem;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.description {
+    color: var(--secondary);
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    text-align: left;
+}
+
+.categoryTitle {
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.skillItem {
+    margin-bottom: 1rem;
+}
+
+.skillLabel {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: var(--text-dark);
+}
+
+/* Bar Background */
+.progressBar {
+    background-color: var(--primary);
+    border-radius: 9999px;
+    overflow: hidden;
+    height: 1.25rem;
+    border: 1.5px solid white;
+}
+
+/* Animated Fill */
+.progressFill {
+    /* Start at zero */
+    width: 0;
+    /* Target is held in --level */
+    background-color: var(--accent);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--background);
+    font-size: 0.75rem;
+    white-space: nowrap;
+    /* animate to var(--level) */
+    animation: fillBar 1s ease-out forwards;
+}
+
+/* Keyframes read from --level */
+@keyframes fillBar {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--level);
+    }
+}

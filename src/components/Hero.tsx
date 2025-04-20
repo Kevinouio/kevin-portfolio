@@ -1,5 +1,4 @@
 // src/components/Hero.tsx
-import React from "react";
 import styles from "../styles/components/Hero.module.css";
 
 export default function Hero() {
@@ -12,7 +11,7 @@ export default function Hero() {
             {/* text */}
             <div className={styles.heroText}>
                 <h1 className={styles.heroTitle}>
-                    Hey, I’m <span className={styles.highlight}>Kevin Ho</span>
+                    Hey Guys, I’m <span className={styles.highlight}>Kevin Ho</span>
                 </h1>
 
                 <p className={styles.heroDescription}>

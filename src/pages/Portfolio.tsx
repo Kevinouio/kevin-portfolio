@@ -1,7 +1,7 @@
 // Portfolio.tsx
 import React from "react";
 import Hero from "../components/Hero";
-import About from "../components/About";
+import FunFacts from "../components/FunFacts";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 import Resume from "../components/Resume";
@@ -24,13 +24,13 @@ const Portfolio: React.FC = () => {
                 <Resume/>
             </section>
 
-            <section id="about" className="section">
-                <About/>
+            <section id="fun-facts" className="section">
+                 <FunFacts/>
             </section>
 
 
             <section id="contact" className="section">
-                <Contact/>
+            <Contact/>
             </section>
         </div>
     );

@@ -57,7 +57,7 @@
 }
 
 .highlight {
-    color: #26809f; /* example: gold */
+    color: var(--accent); /* example: gold */
 }
 
 

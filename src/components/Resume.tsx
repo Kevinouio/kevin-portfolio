@@ -1,23 +1,25 @@
-import { useState, useEffect } from "react";
-
+// src/components/Resume.tsx
+import styles from "../styles/components/Resume.module.css";
 
 export default function Resume() {
     return (
-        <div className="Resume">
-            <div>
-                <h1>
-                    Hey Y'all! I'm Kevin Ho
-                </h1>
+        <section id="resume" className={styles.resumeSection} data-aos="fade-up">
+            <h2 className={styles.heading}>Resume</h2>
+
+            <object
+                data="/Resume.pdf"
+                type="application/pdf"
+                width="100%"
+                height="900px"
+                className={styles.pdfEmbed}
+            >
                 <p>
-                    Currently, I'm in my second year of my undergrad at Mississippi State University. I
-                    am double majoring in Computer Science and Mathematics with plans to go onto PhD
-                    school once I'm done with my undergraduate studies.
+                    Your browser doesn’t support PDFs.{" "}
+                    <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
+                        Download the PDF
+                    </a>.
                 </p>
-
-
-
-            </div>
-
-        </div>
+            </object>
+        </section>
     );
 }

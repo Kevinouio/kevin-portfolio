@@ -1,38 +1,53 @@
 // src/components/Projects.tsx
-import React from "react";
+import { useState } from "react";
 import styles from "../styles/components/Projects.module.css";
-import { projects } from "../data/projects";
+import { allProjects, Project } from "../data/projects";
+
+const BATCH_SIZE = 3;
 
 export default function Projects() {
+    // how many projects to show initially / after each click
+    const [visibleCount, setVisibleCount] = useState(BATCH_SIZE);
+
+    // slice the array for rendering
+    const visibleProjects = allProjects.slice(0, visibleCount);
+
+    const handleShowMore = () => {
+        setVisibleCount((prev) =>
+            Math.min(prev + BATCH_SIZE, allProjects.length)
+        );
+    };
+
     return (
         <section id="projects" className={styles.projectsSection} data-aos="fade-up">
             <h2 className={styles.heading}>My Projects</h2>
-
             <div className={styles.projectGrid}>
-                {projects.map((project) => (
-                    <div key={project.id} className={styles.projectCard}>
-                        {project.image && (
-                            <img src={project.image} alt={project.title} className={styles.projectImage} />
+                {visibleProjects.map((proj: Project) => (
+                    <div key={proj.id} className={styles.projectCard}>
+                        {proj.image && (
+                            <img
+                                src={proj.image}
+                                alt={proj.title}
+                                className={styles.projectImage}
+                            />
                         )}
-
-                        <h3 className={styles.projectTitle}>{project.title}</h3>
-
-                        <p className={styles.projectDescription}>{project.description}</p>
-
-                        <ul className={styles.techList}>
-                            {project.technologies.map((tech, index) => (
-                                <li key={index}>{tech}</li>
-                            ))}
-                        </ul>
-
+                        <h3 className={styles.projectTitle}>{proj.title}</h3>
+                        <p className={styles.projectDescription}>{proj.description}</p>
+                        {proj.technologies && (
+                            <ul className={styles.techList}>
+                                {proj.technologies.map((tech, i) => (
+                                    <li key={i}>{tech}</li>
+                                ))}
+                            </ul>
+                        )}
                         <div className={styles.links}>
-                            {project.githubLink && (
-                                <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                            {proj.githubLink && (
+                                <a href={proj.githubLink} target="_blank" rel="noopener noreferrer">
                                     GitHub
                                 </a>
                             )}
-                            {project.demoLink && (
-                                <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
+                            {proj.demoLink && (
+                                <a href={proj.demoLink} target="_blank" rel="noopener noreferrer">
                                     Live Demo
                                 </a>
                             )}
@@ -40,6 +55,14 @@ export default function Projects() {
                     </div>
                 ))}
             </div>
+
+            {visibleCount < allProjects.length && (
+                <div className={styles.showMoreContainer}>
+                    <button onClick={handleShowMore} className={styles.showMoreButton}>
+                        Show More
+                    </button>
+                </div>
+            )}
         </section>
     );
 }

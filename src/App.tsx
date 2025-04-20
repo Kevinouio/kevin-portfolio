@@ -1,9 +1,10 @@
 // src/App.tsx
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Navbar from "./components/Navbar";       // ← updated
 import Portfolio from "./pages/Portfolio";
+import ScrollIndicator from "./components/ScrollIndicator";
 
 export default function App() {
     useEffect(() => {
@@ -13,6 +14,7 @@ export default function App() {
     return (
         <>
             <Navbar />
+            <ScrollIndicator />
             <Portfolio />
         </>
     );
